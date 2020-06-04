@@ -21,7 +21,6 @@ public class MyTile : MonoBehaviour {
     private Map map;
 
     private void OnMouseUp() {
-       // Debug.Log(transform.position);
 
         if (CheckTile()) return; 
 

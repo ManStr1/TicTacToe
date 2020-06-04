@@ -46,6 +46,7 @@ public class Map : MonoBehaviour {
             HiddenSquare.transform.position = new Vector3(0, 0, -1f);
             canvas.planeDistance = 1;
         }
+        
 
         curr_player++;
     }
