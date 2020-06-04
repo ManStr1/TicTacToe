@@ -41,7 +41,11 @@ public class Map : MonoBehaviour {
             GenerateWinRoad();
             HiddenSquare.transform.position = new Vector3(0, 0, -1f);
             canvas.planeDistance = 1;
-        } else if (curr_player == size * size - 2) Debug.Log("NOBODY WIN!");
+        } else if (curr_player == size * size - 2) {
+            text.text = "NOBODY WIN!";
+            HiddenSquare.transform.position = new Vector3(0, 0, -1f);
+            canvas.planeDistance = 1;
+        }
 
         curr_player++;
     }
